@@ -2,8 +2,9 @@ import requests
 import json
 from colorama import Fore
 
-API_KEY = '2e3569c67b23407a922f547f0bb0e8e7'
+API_KEY = '<YOUR_API_KEY>'
 
+# Get the response by sending a request to the NewsAPI
 def get_response(country_code):
     url = f'https://newsapi.org/v2/top-headlines?country={country_code}&apiKey={API_KEY}'
     try:
@@ -22,7 +23,8 @@ def get_response(country_code):
     except requests.exceptions.RequestException as e:
         print(f"An error occured: {e}")
     return None
-        
+
+# Retriving the information such as title and link of the news.  
 def get_news(country):
     country_code = country[:2].lower()
     api_response = get_response(country_code)
