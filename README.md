@@ -9,6 +9,7 @@ This repository contains python script helps us to get the fresh `NEWS` based on
 - Python 3.x
 - `requests` library
 - `colorama` library
+- No need to install JSON module manually, as it comes with the python STL.
 ## Installation
 1. Clone this repository
 ```cmd
@@ -21,7 +22,6 @@ pip install requests
 ```cmd
 pip install colorama
 ```
-No need to install JSON module manually, as it comes with the python STL.
 ## Usage
 1. Replace <YOUR_API_KEY> with the actual api key from NewsAPI
 2. Run the script
